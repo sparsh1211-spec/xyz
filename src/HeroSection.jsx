@@ -6,9 +6,9 @@ import { FiArrowLeft, FiArrowRight, FiSearch } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const slides = [
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
-  "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200",
-  "https://images.unsplash.com/photo-1599427303058-f04cbcf4756f?q=80&w=1200",
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=90&w=2000",
+  "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=90&w=2000",
+  "https://images.unsplash.com/photo-1599427303058-f04cbcf4756f?q=90&w=2000",
 ];
 
 export default function HeroSection() {
@@ -23,7 +23,7 @@ export default function HeroSection() {
   const next = () => setIndex((index + 1) % slides.length);
 
   return (
-    <Card className="relative z-10 w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden rounded-none md:rounded-2xl shadow-2xl">
+    <Card className="relative z-10 w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden rounded-none  shadow-2xl">
       <CardContent className="w-full h-full p-0">
 
         {/* Background Image */}
@@ -37,7 +37,7 @@ export default function HeroSection() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center md:px-6 bg-black/40 backdrop-blur-sm">
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center md:px-6 bg-black/40 ">
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
