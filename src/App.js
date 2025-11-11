@@ -1,20 +1,9 @@
-import React from "react";
-import { Button } from "./components/ui/button";
+import HeroSection from "./HeroSection";
 
-function App() {
+export default function App() {
   return (
-    <div className="p-10 space-x-4">
-      <Button>Default Button</Button>
-
-      <Button variant="destructive">
-        Delete
-      </Button>
-
-      <Button variant="outline">
-        Outline
-      </Button>
+    <div className="w-full min-h-screen p-6 bg-gray-50">
+      <HeroSection />
     </div>
   );
 }
-
-export default App;
